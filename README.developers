@@ -1,4 +1,6 @@
-README.Developers for the Lintian tool
+=pod
+
+Readme.Developers for the Lintian tool
 ---
 
 Lintian dissects Debian packages and tries to find bugs and policy
@@ -13,3 +15,5 @@ directory "frontend." This directory holds the "lintian" executable.
 This is what gets called when a user calls lintian. The frontend
 then calls the lintian checks which run over the Debian package 
 that Lintian is checking.
+
+=end
