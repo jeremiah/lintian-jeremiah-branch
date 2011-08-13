@@ -5,5 +5,5 @@ Lintian dissects Debian packages and tries to find bugs and policy
 violations. It contains automated checks for many aspects of Debian
 policy as well as some checks for common errors.
 
-This document describes the lintian git repo kept a github under
-Jeremiah's account.
+This document describes the lintian git repo kept on github.com under
+Jeremiah C. Foster's account.
