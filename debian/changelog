@@ -1,12 +1,43 @@
 lintian (2.5.3) UNRELEASED; urgency=low
 
+  * checks/*:
+    + [NT] Dropped fields from Needs-Info, it is no longer needed.
+    + [JW] Use LC_ALL rather than LANG, since LC_ALL overrules
+      LANG.  (Closes: #637595)
+  * checks/{conffile,etcfiles}{,.desc}:
+    + [JW] Merged etcfiles into conffile.  (Closes: #637590)
+
+  * collection/fields{,.desc}:
+    + [NT] Removed, no longer used.
+
+  * data/fields/archive-sections:
+    + [NT] Fixed a typo in "otherosfs" section name.  Thanks to
+      Stefan Potyra for the report.  (Closes: #637596)
   * data/spelling/corrections:
     + [NT] Added some corrections for "remove" etc.  Thanks to
       Jakub Wilk for spotting those.
 
+  * debian/copyright:
+    + [NT] Added Jakub Wilk to maintainers.
+  * debian/rules:
+    + [JW] Use LC_ALL rather than LANG, since LC_ALL overrules
+      LANG.
+
   * doc/README.developers:
     + [NT] New file.  Thanks to Jeremiah C. Foster for the initial
       contribution.
+
+  * lib/Util.pm:
+    + [JW] Use LC_ALL rather than LANG, since LC_ALL overrules
+      LANG.
+  * lib/Lintian/Collect/Source.pm:
+    + [NT] Removed a requirement for fields that was not needed.
+  * lib/Lintian/Profile.pm:
+    + [NT] Reject profiles containing an unknown field.
+
+  * private/*:
+    + [JW] Use LC_ALL rather than LANG, since LC_ALL overrules
+      LANG.
 
  -- Niels Thykier <niels@thykier.net>  Wed, 10 Aug 2011 21:09:24 +0200
 
